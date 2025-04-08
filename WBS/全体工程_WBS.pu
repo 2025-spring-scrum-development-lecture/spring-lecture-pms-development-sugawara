@@ -1,0 +1,27 @@
+@startwbs タイトルWBS
+title タイトルWBS
++ 予約システム
+**[#Pink] UIデザイン
+***[#SkyBlue] 予約画面を表示
+***[#SkyBlue] お客様情報を表示
+***[#SkyBlue] 宴会の有無を選択
+***[#SkyBlue] 利用人数とチェックアウト日を入力
+***[#SkyBlue] 見積料金を表示
+**[#Pink] 開発
+***[#SkyBlue] お客様情報を処理
+***[#SkyBlue] 宴会の有無を選択
+***[#SkyBlue] 部屋の空き状況を処理
+***[#SkyBlue] 見積料金計算を実装
+***[#SkyBlue] メールシステムの実装
+**[#Pink] テスト
+***[#SkyBlue] UIの動作確認
+***[#SkyBlue] システムのロジック確認
+***[#SkyBlue] メール通知の確認
+***[#SkyBlue] エラーテスト
+@endwbs
+
+
+
+
+
+
