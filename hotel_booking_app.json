@@ -1,0 +1,198 @@
+[
+    {
+        "name": "基本的な部屋予約",
+        "email": "aaa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/16",
+        "room": "和室(本館)",
+        "num_people": "2",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 2
+    },
+    {
+        "name": "高級部屋と宴会オプション付きの予約",
+        "email": "aaa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/16",
+        "room": "岩手山展望露天風呂付き和室(本館)",
+        "num_people": "2",
+        "banquet": {
+            "status": "あり",
+            "hall": "春日",
+            "drinks": "あり"
+        },
+        "nights": 2
+    },
+    {
+        "name": "大人数グループの予約",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/16",
+        "room": "和室28畳(西館)",
+        "num_people": "10",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 2
+    },
+    {
+        "name": "長期滞在と全オプション付き予約",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2026/04/10",
+        "room": "和室28畳(西館)",
+        "num_people": "10",
+        "banquet": {
+            "status": "あり",
+            "hall": "平安",
+            "drinks": "あり"
+        },
+        "nights": 361
+    },
+    {
+        "name": "複数の部屋を連続して予約するケース",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2026/04/10",
+        "room": "岩手山展望露天風呂付き和室(本館)",
+        "num_people": "2",
+        "banquet": {
+            "status": "あり",
+            "hall": "平安",
+            "drinks": "あり"
+        },
+        "nights": 361
+    },
+    {
+        "name": "複数の部屋を連続して予約するケース",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2026/04/10",
+        "room": "檜の内風呂本館和洋室(本館)",
+        "num_people": "2",
+        "banquet": {
+            "status": "あり",
+            "hall": "春日",
+            "drinks": "あり"
+        },
+        "nights": 361
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "岩手山展望露天風呂付き和室(本館)",
+        "num_people": "5",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "檜の内風呂本館和洋室(本館)",
+        "num_people": "5",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "岩手山側和室(本館)",
+        "num_people": "5",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "和室(本館)",
+        "num_people": "2",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "和室28畳(西館)",
+        "num_people": "10",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "和室10畳(西館)",
+        "num_people": "5",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "洋室10畳(西館)",
+        "num_people": "4",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    },
+    {
+        "name": "部屋タイプによる収容人数の確認",
+        "email": "aa",
+        "checkin": "2025/04/14",
+        "checkout": "2025/04/17",
+        "room": "和洋室7.5畳(西館)",
+        "num_people": "5",
+        "banquet": {
+            "status": "なし",
+            "hall": "なし",
+            "drinks": "なし"
+        },
+        "nights": 3
+    }
+]
