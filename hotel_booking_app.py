@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from datetime import datetime
-
+import json
 from models import RoomModel, BanquetModel, ReservationData
 from utils import calculate_nights, send_confirmation_email, format_reservation_text
 import ui_components
@@ -231,6 +231,56 @@ class HotelBookingApp:
         
         # 予約完了後に利用可能な宴会場リストを更新
         self.update_available_banquet_halls()
+        
+    def book_room(self):
+        """部屋の予約を確定し、予約情報を JSON に追加保存する"""
+        name = self.name_entry.get()
+        email = self.email_entry.get()
+        checkin = self.checkin_entry.get()
+        checkout = self.checkout_entry.get()
+        room = self.room_type.get()
+        num_people = self.num_people.get()
+        banquet_text = "あり" if self.banquet_var.get() else "なし"
+        banquet_hall = self.banquet_choice.get() if self.banquet_var.get() else "なし"
+        drinks_text = "あり" if self.banquet_var.get() and self.drinks_var.get() else "なし"
+        nights = self.calculate_nights()
+
+        # 予約情報を辞書にまとめる
+        reservation = {
+            "name": name,
+            "email": email,
+            "checkin": checkin,
+            "checkout": checkout,
+            "room": room,
+            "num_people": num_people,
+            "banquet": {
+                "status": banquet_text,
+                "hall": banquet_hall,
+                "drinks": drinks_text
+            },
+            "nights": nights
+        }
+
+        # 既存の予約情報を読み込む
+        try:
+            with open("hotel_booking_app.json", "r", encoding="utf-8") as f:
+                reservations = json.load(f)
+            # JSONファイルの内容が辞書の場合はリストに変換
+            if isinstance(reservations, dict):
+                reservations = [reservations]
+        except (FileNotFoundError, json.JSONDecodeError):
+            reservations = []  # ファイルが存在しないか読み込みエラーが起きた場合
+
+        # 新しい予約情報をリストに追加
+        reservations.append(reservation)
+
+        # 予約情報をファイルに上書き保存（追加済みの全ての予約情報を保存）
+        try:
+            with open("hotel_booking_app.json", "w", encoding="utf-8") as f:
+                json.dump(reservations, f, ensure_ascii=False, indent=4)
+            print("予約情報を hotel_booking_app.json に追加保存しました。")
+        except Exception as e:
+            print("予約情報の保存中にエラーが発生しました:", e)
 
     def clear_form(self):
         """フォームをクリアする"""
